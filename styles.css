@@ -2,3 +2,33 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#canvas {
+  background-color: white;
+  margin-top: 40px;
+}
+
+.controls {
+  margin: 30px auto;
+}
+
+.controls i:nth-child(1),
+i:nth-child(2) {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.controls i:nth-child(1) {
+  color: green;
+}
+
+.controls i:nth-child(2) {
+  color: #df4b70;
+}
