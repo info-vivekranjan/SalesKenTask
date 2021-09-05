@@ -26,16 +26,41 @@ body {
   margin: 10px auto;
 }
 
-.controls i:nth-child(1),
-i:nth-child(2) {
+.play > i,
+.pause > i {
   font-size: 45px;
   cursor: pointer;
 }
 
-.controls i:nth-child(1) {
+.play > i {
   color: green;
 }
 
-.controls i:nth-child(2) {
+.pause > i {
   color: #df4b70;
+}
+
+.play,
+.pause {
+  position: relative;
+  margin-right: 30px;
+}
+
+.play .tooltiptext,
+.pause .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.play:hover .tooltiptext,
+.pause:hover .tooltiptext {
+  visibility: visible;
 }
