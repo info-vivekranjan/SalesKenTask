@@ -35,3 +35,12 @@ Audio waveform using Canvas API
 - After Overlap audio waveform
 
 ![After Overlap](./Screenshots/afterOverlap.png)
+
+#### End Notes
+
+Thank you Salesken for giving me such a new kind of task, before this task I had naver heard about Canvas API.
+For this task Initially I have done so much of google search and in that process ended up to the best tutorial which is available on MDN itself, here is the link
+
+- https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial
+
+Now I know at least the basics of Canvs API which I have learned and used in this task, Hope you will like it.
