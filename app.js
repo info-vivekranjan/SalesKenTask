@@ -17,11 +17,41 @@ const heightArr = [
 ];
 
 let widthOfEachCanvs = 4;
-let start = 10;
+let start = 13;
+let newStart = start; // for overlapping new color
 
 //Static audio waveform using heightArr
 for (let i = 0; i < heightArr.length; i++) {
-  ctx.fillStyle = "rgb(218, 218, 218)";
-  ctx.fillRect(start, 175, widthOfEachCanvs, heightArr[i]);
+  ctx.fillStyle = "silver";
+  ctx.fillRect(start, 175, widthOfEachCanvs, heightArr[i]); //(x-axis,y-axis,width,height)
   start = start + widthOfEachCanvs + 4;
 }
+
+//<----------------- Now overlapping function for all the Rect------------------>
+
+// Now for each Interval 0f 300 millisecond callback function from handlePlay will be called
+
+let interval;
+function marchCanvas(overlapFunction) {
+  return () => {
+    interval = setInterval(() => {
+      overlapFunction((prev) => prev + 1);
+    }, 300);
+  };
+}
+
+//this callback function will be returned in marchCanvas function after each 300ms
+
+let offset = 0; // the value of offset will change after each 300ms and shift to the next Rect
+const handlePlay = marchCanvas(() => {
+  ctx.fillStyle = "#df4b70";
+  ctx.fillRect(newStart, 175, widthOfEachCanvs, heightArr[offset]);
+  offset++;
+  newStart = newStart + widthOfEachCanvs + 4;
+});
+
+// Now For Pause functionality, will use clearInterval
+
+const handlePause = () => {
+  return clearInterval(interval);
+};
