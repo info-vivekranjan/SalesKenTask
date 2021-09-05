@@ -60,18 +60,90 @@ const handlePause = () => {
 
 // Static Tag 1
 
-ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.fillStyle = "#61B624"; //widest Rect
 ctx.fillRect(100, 0, 120, 20);
 
-ctx.fillStyle = "black";
+ctx.fillStyle = "white"; // text
 ctx.font = "17px serif";
 ctx.fillText("Introduction", 120, 15);
 
-ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.fillStyle = "#61B624"; // line linked to the widest Rect
 ctx.fillRect(170, 20, 4, 156);
 
-ctx.beginPath();
-// ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.beginPath(); // circle below the line
 ctx.arc(172, 170, 10, 0, Math.PI * 2, true);
+ctx.moveTo(110, 75);
+ctx.fill();
+
+// Static Tag 2
+
+ctx.fillStyle = "#65C98F"; //widest Rect
+ctx.fillRect(420, 0, 80, 20);
+
+ctx.fillStyle = "white"; // text
+ctx.font = "17px serif";
+ctx.fillText("one_six", 430, 15);
+
+ctx.fillStyle = "#65C98F"; // line linked to the widest Rect
+ctx.fillRect(460, 20, 4, 156);
+
+ctx.beginPath(); // circle below the line
+// ctx.fillStyle = "#65C98F";
+
+ctx.arc(463, 170, 10, 0, Math.PI * 2, true);
+ctx.moveTo(110, 75);
+ctx.fill();
+
+// Static Tag 3
+
+ctx.fillStyle = "#3350C0";
+ctx.fillRect(1080, 60, 80, 20);
+
+ctx.fillStyle = "white";
+ctx.font = "17px serif";
+ctx.fillText("Profile", 1100, 75);
+
+ctx.fillStyle = "#3350C0";
+ctx.fillRect(1115, 80, 4, 100);
+
+ctx.beginPath();
+// ctx.fillStyle = "#3350C0";
+ctx.arc(1118, 170, 10, 0, Math.PI * 2, true);
+ctx.moveTo(110, 75);
+ctx.fill();
+
+// Static Tag 4
+
+ctx.fillStyle = "#9A6C68";
+ctx.fillRect(1060, 25, 195, 20);
+
+ctx.fillStyle = "white";
+ctx.font = "17px serif";
+ctx.fillText("Rapport Building - Empthy", 1065, 40);
+
+ctx.fillStyle = "#9A6C68";
+ctx.fillRect(1200, 45, 4, 130);
+
+ctx.beginPath();
+// ctx.fillStyle = "#9A6C68";
+ctx.arc(1203, 170, 10, 0, Math.PI * 2, true);
+ctx.moveTo(110, 75);
+ctx.fill();
+
+// Static Tag 5
+
+ctx.fillStyle = "#69A548";
+ctx.fillRect(1110, 0, 195, 20);
+
+ctx.fillStyle = "white";
+ctx.font = "17px serif";
+ctx.fillText("Rapport Building - Energy", 1115, 15);
+
+ctx.fillStyle = "#69A548";
+ctx.fillRect(1280, 17, 4, 150);
+
+ctx.beginPath();
+// ctx.fillStyle = "#69A548";
+ctx.arc(1283, 170, 10, 0, Math.PI * 2, true);
 ctx.moveTo(110, 75);
 ctx.fill();
