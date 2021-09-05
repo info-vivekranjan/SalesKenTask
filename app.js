@@ -55,3 +55,23 @@ const handlePlay = marchCanvas(() => {
 const handlePause = () => {
   return clearInterval(interval);
 };
+
+// <-------------------------------- Static Tags ----------------------------->
+
+// Static Tag 1
+
+ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.fillRect(100, 0, 120, 20);
+
+ctx.fillStyle = "black";
+ctx.font = "17px serif";
+ctx.fillText("Introduction", 120, 15);
+
+ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.fillRect(170, 20, 4, 156);
+
+ctx.beginPath();
+// ctx.fillStyle = "rgba(68, 255, 30, 0.6)";
+ctx.arc(172, 170, 10, 0, Math.PI * 2, true);
+ctx.moveTo(110, 75);
+ctx.fill();
