@@ -1,4 +1,4 @@
-# SalesKenTask
+# SalesKen Task
 
 Audio waveform using Canvas API
 
