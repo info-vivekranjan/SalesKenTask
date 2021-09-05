@@ -2,7 +2,7 @@
 
 Audio waveform using Canvas API
 
-### Link for the project
+### Project demo link:
 
 - https://audio-waveform.netlify.app/
 
@@ -34,4 +34,4 @@ Audio waveform using Canvas API
 
 - After Overlap audio waveform
 
-![Before Overlap](./Screenshots/beforeOverlap.png)
+![After Overlap](./Screenshots/afterOverlap.png)
